@@ -33,11 +33,7 @@ post:
     copyright_content: '本博客所有文章除特别声明外，均采用
       <a href="%s" target="_blank">%s</a> 许可协议。转载请注明来自 <a href="%s" target="_blank">%s</a>！'
   recommend: 喜欢这篇文章的人也看了
-  edit:
-    github: 在 GitHub 上编辑
-    yuque: 在 语雀 上编辑
-    # notion: 在 Notion 上编辑
-    # flowus: 在 Flowus 上编辑
+  edit: 编辑
 
 search:
   title: "搜索"
@@ -73,10 +69,10 @@ aside:
       name: 建站天数
       unit: 天
     last_push_date:
-      name: 最后更新
+      name: 最后更新时间
     site_wordcount: 全站字数
-    site_uv_name: 总访客数
-    site_pv_name: 总访问量
+    site_uv_name: 全站访客数
+    site_pv_name: 全站总访问量
   more_button: 查看更多
   card_newest_comments:
     headline: 最新评论
@@ -130,41 +126,3 @@ loading: 加载中...
 load_more: 加载更多
 
 error404: 页面没有找到
-
-menu:
-  Posts: 文章  
-  Archives: 归档
-  Categories: 分类
-  Tags: 标签
-
-  Friends: 友链
-  Link: 友情链接
-  Friends Circle: 朋友圈
-  Comments: 留言板
-
-  Personal: 个人
-  Music: 音乐馆
-  Bangumi: 追番列表
-  Album: 相册
-  Air Conditioner: 空调
-
-  About: 关于
-  About Me: 关于我
-  Essays: 随想
-  Random Post: 随机文章
-
-menu_settings:
-  # 用于多语言切换的菜单配置
-  Archives: 归档
-  Categories: 分类
-  Tags: 标签
-  Link: 友情链接
-  Friends Circle: 朋友圈
-  Comments: 留言板
-  Music: 音乐馆
-  Bangumi: 追番列表
-  Album: 相册
-  Air Conditioner: 空调
-  About Me: 关于我
-  Essays: 随想
-  Random Post: 随机文章

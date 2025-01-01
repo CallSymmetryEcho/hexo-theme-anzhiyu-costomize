@@ -33,7 +33,7 @@ mixin postUI(posts)
               each item, index in article.categories.data
                 .article-categories-original=item.name
             if new_post
-              span.newPost 最新
+              span.newPost New Post
             a.unvisited-post(href=url_for(link) title=title) 未读
           a.article-title(href=url_for(link) title=title)= title
         .article-meta-wrap

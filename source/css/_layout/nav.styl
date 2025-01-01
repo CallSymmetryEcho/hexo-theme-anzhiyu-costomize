@@ -164,8 +164,88 @@
   &::after
     background: var(--anzhiyu-main) !important;
 
+/* source/css/_layout/nav.styl */
+.nav-button-language
+  position: relative
+  display: inline-flex
+  align-items: center
+  cursor: pointer
+  padding: 0 8px
+  height: 35px
+  color: var(--anzhiyu-fontcolor)
+  transition: all .3s
 
+  &:hover
+    .nav-lang-list
+      display: block
+      animation: dropdown-animation 0.3s
+
+  #nav-lang-button
+    display: flex
+    align-items: center
+    
+    i
+      font-size: 1.3em
+
+  .nav-lang-list
+    display: none
+    position: absolute
+    top: 100%
+    right: 0
+    background: var(--anzhiyu-card-bg)
+    border-radius: 8px
+    padding: 6px 0
+    min-width: 100px
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1)
+    z-index: 1000
+
+  .nav-lang-ul
+    list-style: none
+    margin: 0
+    padding: 0
+
+  .nav-lang-item
+    padding: 8px 16px
+    color: var(--anzhiyu-fontcolor)
+    transition: all .3s
+    cursor: pointer
+
+    &:hover
+      background: var(--anzhiyu-main)
+      color: #fff
+
+    &.active
+      color: var(--anzhiyu-main)
+      font-weight: bold
+
+      &:hover
+        color: #fff
+
+    .nav-lang-link
+      color: inherit
+      text-decoration: none
+      display: block
+      width: 100%
+
+@keyframes dropdown-animation
+  from
+    opacity: 0
+    transform: translateY(-10px)
+  to
+    opacity: 1
+    transform: translateY(0)
+
+// @keyframes dropdown-animation
+//   from
+//     opacity: 0
+//     transform: translateY(-10px)
+//   to
+//     opacity: 1
+//     transform: translateY(0)
+      
 @media screen and (max-width: 768px)
+
+  
   #page-header #nav
     padding: 20px
 
@@ -384,7 +464,7 @@
   -webkit-animation-timing-function ease-in
 
 #menus > div.menus_items > div > a
-  letter-spacing 0.3rem
+  letter-spacing 0.1rem
   font-weight 700
   padding 0em 0.8em 0em 1em
   height 35px

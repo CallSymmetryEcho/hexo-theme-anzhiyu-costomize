@@ -18,7 +18,8 @@ div
 
   if theme.snackbar.enable
     script(src=url_for(theme.asset.snackbar))
-
+  if theme.nav.language.enable 
+    script(src=url_for(theme.asset.language_js))
   if theme.pangu.enable
     != partial("includes/third-party/pangu.pug", {}, { cache: true })
   if theme.asset.meting_api

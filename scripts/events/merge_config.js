@@ -172,7 +172,7 @@ hexo.extend.filter.register(
           linkList: [
             {
               link: "https://github.com/anzhiyu-c/hexo-theme-anzhiyu",
-              text: "主题",
+              text: "Theme-AnZhiYu",
             },
           ],
           subTitle: {

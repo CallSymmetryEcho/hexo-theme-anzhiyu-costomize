@@ -1,0 +1,9 @@
+.nav-button-language
+  a#nav-lang-button
+    i.fas.fa-globe
+  #nav-lang-list.nav-lang-list
+    if theme.nav.language && theme.nav.language.available
+      ul.nav-lang-ul
+        each lang in theme.nav.language.available
+          li.nav-lang-item(onclick=`changeLang("${lang.code}")`)
+            a.nav-lang-link= lang.name

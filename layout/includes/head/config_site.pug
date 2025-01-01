@@ -31,4 +31,8 @@ script#config-diff.
     isToc: !{showToc},
     postUpdate: '!{full_date(page.updated)}',
     postMainColor: '!{page.main_color}',
+    language: {
+      default: '#{theme.nav.language.default}',
+      available: !{JSON.stringify(theme.nav.language.available)}
+      },
   }
